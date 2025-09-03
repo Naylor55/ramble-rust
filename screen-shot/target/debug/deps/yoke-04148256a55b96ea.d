@@ -1,0 +1,13 @@
+E:\RedMi_E盘_person\code\ramble-rust\screen-shot\target\debug\deps\libyoke-04148256a55b96ea.rmeta: C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\lib.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\cartable_ptr.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\either.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\erased.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\kinda_sorta_dangling.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\macro_impls.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\yoke.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\yokeable.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\zero_from.rs
+
+E:\RedMi_E盘_person\code\ramble-rust\screen-shot\target\debug\deps\yoke-04148256a55b96ea.d: C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\lib.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\cartable_ptr.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\either.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\erased.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\kinda_sorta_dangling.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\macro_impls.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\yoke.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\yokeable.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\zero_from.rs
+
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\lib.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\cartable_ptr.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\either.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\erased.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\kinda_sorta_dangling.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\macro_impls.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\yoke.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\yokeable.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\yoke-0.8.0\src\zero_from.rs:

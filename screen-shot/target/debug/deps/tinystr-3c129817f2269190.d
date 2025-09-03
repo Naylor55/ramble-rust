@@ -1,0 +1,12 @@
+E:\RedMi_E盘_person\code\ramble-rust\screen-shot\target\debug\deps\libtinystr-3c129817f2269190.rmeta: C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\lib.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\macros.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\ascii.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\asciibyte.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\error.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\int_ops.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\unvalidated.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\ule.rs
+
+E:\RedMi_E盘_person\code\ramble-rust\screen-shot\target\debug\deps\tinystr-3c129817f2269190.d: C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\lib.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\macros.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\ascii.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\asciibyte.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\error.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\int_ops.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\unvalidated.rs C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\ule.rs
+
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\lib.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\macros.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\ascii.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\asciibyte.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\error.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\int_ops.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\unvalidated.rs:
+C:\Users\cml\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.8.1\src\ule.rs:
