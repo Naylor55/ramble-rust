@@ -146,6 +146,5 @@ fn main() {
     //线程池方案
     screen::do_shot_with_threadpool("rtsp.txt");
 
-    //opencv + 线程池方案
-    // screen.do_shot_with_opencv("rtsp.txt")
+  
 }

@@ -1,1 +1,0 @@
-E:\RedMi_E盘_person\code\ramble-rust\screen-shot\target\debug\screen-shot.exe: E:\RedMi_E盘_person\code\ramble-rust\screen-shot\src\file_util.rs E:\RedMi_E盘_person\code\ramble-rust\screen-shot\src\live.rs E:\RedMi_E盘_person\code\ramble-rust\screen-shot\src\main.rs E:\RedMi_E盘_person\code\ramble-rust\screen-shot\src\screen.rs

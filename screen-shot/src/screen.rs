@@ -1,9 +1,7 @@
 use crate::file_util;
 use chrono::Local;
-use opencv::{core, imgcodecs, prelude::*, videoio};
 use std::fs;
 use std::io;
-use std::io::Write;
 use std::io::Write;
 use std::path::Path;
 use std::process::{Command, Stdio};
@@ -239,80 +237,4 @@ pub fn do_shot_with_threadpool(rtsp_file: &str) {
         }
     }
     println!("并行截图耗时: {:?}", start.elapsed());
-}
-
-///截图 - 使用opencv 并且是多线程
-/// 需要系统安装 OpenCV（动态库），Rust crate 只是绑定
-/// 内部通过 OpenCV 的 C++ API 拉流、解码；在 Rust 进程内执行，不启动新进程
-/// 截图速度快，不启动子进程，CPU/内存占用更低，可按需抓帧；线程池可控制并发
-/// 可以直接拿到 Mat 做进一步处理（缩放、画标注等）
-pub fn do_shot_with_opencv(rtsp_file: &str) {
-    let rtsp_set = file_util::read_rtsp(rtsp_file);
-
-    match rtsp_set {
-        Ok(urls) => {
-            let pool_size = 4; // 可以根据需要调整
-            let pool = ThreadPool::new(pool_size);
-            let urls = Arc::new(urls);
-
-            for (idx, url) in urls.iter().enumerate() {
-                let url = url.clone();
-                pool.execute(move || match capture_rtsp_frame(&url, idx) {
-                    Ok(path) => println!("Saved: {}", path),
-                    Err(e) => {
-                        let err_msg = format!("Failed {}: {}", url, e);
-                        log_error(&err_msg);
-                        eprintln!("{}", err_msg);
-                    }
-                });
-            }
-
-            pool.join(); // 等待所有任务完成
-        }
-        Err(e) => {
-            eprintln!("Failed to read {}: {}", rtsp_file, e);
-        }
-    }
-}
-
-/// 截图一帧并保存
-fn capture_frame_with_opencv(rtsp_url: &str, idx: usize) -> opencv::Result<String> {
-    let mut cap = videoio::VideoCapture::from_file(rtsp_url, videoio::CAP_FFMPEG)?;
-    if !videoio::VideoCapture::is_opened(&cap)? {
-        return Err(opencv::Error::new(
-            core::StsError,
-            "Failed to open RTSP".to_string(),
-        ));
-    }
-
-    let mut frame = Mat::default();
-
-    // 尝试读取一帧
-    for _ in 0..5 {
-        cap.read(&mut frame)?;
-        if !frame.empty() {
-            break;
-        }
-    }
-
-    if frame.empty() {
-        return Err(opencv::Error::new(
-            core::StsError,
-            "No frame captured".to_string(),
-        ));
-    }
-
-    // 时间戳命名
-    let ts = Local::now().format("%y%m%d_%H%M%S").to_string();
-    let out_path = format!("img/rtsp_{}_{}.jpg", idx + 1, ts);
-
-    // 确保目录存在
-    if let Some(parent) = Path::new(&out_path).parent() {
-        let _ = fs::create_dir_all(parent);
-    }
-
-    // 保存图片
-    imgcodecs::imwrite(&out_path, &frame, &opencv::types::VectorOfi32::new())?;
-
-    Ok(out_path)
 }
