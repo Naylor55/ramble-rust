@@ -1,6 +1,5 @@
 use tokio::net::{TcpListener, TcpStream};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
-use std::sync::Arc;
 
 #[tokio::main]
 async fn main() {
@@ -30,20 +29,15 @@ async fn handle_client(mut stream: TcpStream) -> Result<(), Box<dyn std::error::
 
     // RTMP 握手（简化版）
     let mut buffer = [0; 1536];
-    let n = stream.read(&mut buffer).await?;
-    if n != 1536 {
-        return Err("无效的 RTMP 握手".into());
-    }
+    // 使用 read_exact 确保完整读取 1536 字节握手数据
+    stream.read_exact(&mut buffer).await?;
 
     // 发送 C1 和 S1
     let c1_s1: [u8; 1536] = [0; 1536];
     stream.write_all(&c1_s1).await?;
 
     // 读取 C2
-    let n = stream.read(&mut buffer).await?;
-    if n != 1536 {
-        return Err("无效的 RTMP 握手".into());
-    }
+    stream.read_exact(&mut buffer).await?;
 
     // 发送 S2
     let s2: [u8; 1536] = [0; 1536];
@@ -51,30 +45,36 @@ async fn handle_client(mut stream: TcpStream) -> Result<(), Box<dyn std::error::
 
     // 处理 RTMP 消息
     loop {
-        let mut header_buffer = [0; 11];
-        let n = stream.read_exact(&mut header_buffer).await?;
-        if n != 11 {
-            return Err("无效的 RTMP 消息头".into());
-        }
+        // 读完整的基本头(1) + 消息头(11) = 12 字节
+        let mut header_buffer = [0; 12];
+        stream.read_exact(&mut header_buffer).await?; // read_exact fills the buffer or returns an error
 
         // 解析消息头
         let chunk_type = header_buffer[0] & 0x3;
-        let timestamp = u32::from_be_bytes([header_buffer[1], header_buffer[2], header_buffer[3]]);
-        let body_length = u32::from_be_bytes([header_buffer[4], header_buffer[5], header_buffer[6]]);
+        // timestamp 和 body_length 是 3 字节（24-bit），手动组合为 u32
+        let timestamp = ((header_buffer[1] as u32) << 16)
+            | ((header_buffer[2] as u32) << 8)
+            | (header_buffer[3] as u32);
+        let body_length = ((header_buffer[4] as u32) << 16)
+            | ((header_buffer[5] as u32) << 8)
+            | (header_buffer[6] as u32);
         let message_type_id = header_buffer[7];
-        let message_stream_id = u32::from_le_bytes([header_buffer[8], header_buffer[9], header_buffer[10]]);
+        // message_stream_id 是 4 字节，小端序
+        let message_stream_id = u32::from_le_bytes([
+            header_buffer[8],
+            header_buffer[9],
+            header_buffer[10],
+            header_buffer[11],
+        ]);
 
         println!(
             "接收到 RTMP 消息: chunk_type={}, timestamp={}, body_length={}, message_type_id={}, message_stream_id={}",
             chunk_type, timestamp, body_length, message_type_id, message_stream_id
         );
 
-        // 读取消息体
+        // 读取消息体（read_exact 确保填满 buffer）
         let mut body_buffer = vec![0; body_length as usize];
-        let n = stream.read_exact(&mut body_buffer).await?;
-        if n != body_length as usize {
-            return Err("无效的 RTMP 消息体".into());
-        }
+        stream.read_exact(&mut body_buffer).await?;
 
         // 根据消息类型处理消息
         match message_type_id {
