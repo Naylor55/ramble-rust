@@ -1,0 +1,37 @@
+# Rust build output
+/target/
+
+# Backup and swap files
+*~
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# Environment and secret files
+.env
+.env.*.local
+.secret
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+.cache/
+
+# Cargo generated files (do NOT ignore Cargo.lock for applications)
+# Uncomment if you really want to ignore lockfile:
+# /Cargo.lock
+
+# Other common
+dist/
+build/
+.coverage

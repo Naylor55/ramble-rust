@@ -1,0 +1,56 @@
+[package]
+name = "rtmp-streaming-server"
+version = "0.1.0"
+edition = "2021"
+description = "A simple RTMP streaming server written in Rust"
+authors = ["Agent"]
+license = "MIT"
+repository = ""
+readme = "README.md"
+
+[dependencies]
+# RTMP protocol implementation
+#rtmp = "0.8.0"
+rtmp = "0.6.5"
+# FLV format support (optional for handling FLV data)
+#flv = "0.2.0"
+flv = "0.0.1"
+# AMF encoding/decoding for RTMP
+#amf = "0.3.0"
+amf = "1.0.0"
+# Async runtime
+tokio = { version = "1.0", features = ["full"] }
+# Command line argument parsing
+clap = { version = "4.0", features = ["derive"] }
+# Structured logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+# Error handling
+anyhow = "1.0"
+#thiserror = "1.0"
+thiserror = "2.0.18"
+# Serialization (optional for configuration)
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Configuration file support
+#config = "0.13"
+config = "0.15.19"
+# Byte manipulation
+bytes = "1.0"
+# Async utilities
+futures = "0.3"
+# UUID generation
+uuid = { version = "1.0", features = ["v4", "serde"] }
+# HTTP support (enable features so Body::wrap_stream / service helpers are available)
+hyper = { version = "0.14", features = ["full"] }
+# Asynchronous stream support
+async-stream = "0.3"
+
+[dev-dependencies]
+# Testing utilities
+tokio-test = "0.4"
+# Mock testing
+#mockall = "0.11"
+mockall = "0.14.0"
+# Test assertions
+assert_matches = "1.5"
