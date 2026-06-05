@@ -1,0 +1,1 @@
+E:\little_project\ramble-sr\target\debug\screen-recorder.exe: E:\little_project\ramble-sr\src\capture.rs E:\little_project\ramble-sr\src\encoder.rs E:\little_project\ramble-sr\src\main.rs E:\little_project\ramble-sr\src\recorder.rs

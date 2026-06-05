@@ -2,7 +2,7 @@
 
 简要说明
 - 用 Rust 编写的媒体相关服务/示例项目（音视频处理、流媒体或文件服务等）。
-- 本 README 基于项目常见约定，具体以源码为准。
+
 
 先决条件
 - Rust 工具链（rustc + cargo），建议使用 stable 版本：https://rustup.rs

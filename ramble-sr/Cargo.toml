@@ -1,0 +1,11 @@
+[package]
+name = "screen-recorder"
+version = "0.1.0"
+edition = "2021"
+description = "Windows 录屏工具，基于 Rust 实现"
+
+[dependencies]
+xcap = "0.5"
+clap = { version = "4", features = ["derive"] }
+image = "0.25"
+ctrlc = "3"

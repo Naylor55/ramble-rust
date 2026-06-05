@@ -1,0 +1,12 @@
+E:\little_project\ramble-sr\target\debug\deps\fax-097ed97c8b767839.d: C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\lib.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\maps.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\decoder.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\encoder.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\tiff.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\bitmaps.rs
+
+E:\little_project\ramble-sr\target\debug\deps\libfax-097ed97c8b767839.rlib: C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\lib.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\maps.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\decoder.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\encoder.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\tiff.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\bitmaps.rs
+
+E:\little_project\ramble-sr\target\debug\deps\libfax-097ed97c8b767839.rmeta: C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\lib.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\maps.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\decoder.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\encoder.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\tiff.rs C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\bitmaps.rs
+
+C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\lib.rs:
+C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\maps.rs:
+C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\decoder.rs:
+C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\encoder.rs:
+C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\tiff.rs:
+C:\Users\cml\.cargo\bin\registry\src\index.crates.io-1949cf8c6b5b557f\fax-0.2.7\src\bitmaps.rs:
